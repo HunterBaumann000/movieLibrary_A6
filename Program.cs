@@ -131,7 +131,7 @@ namespace MovieLibrary_A5
                 } 
                 else if (userInput == "2")
                 {
-                    //displays menu for reading the from the file
+                    //displays menu for reading the media from the file
                     menu.DisplayReadMediaMenu();
                     userInput = Console.ReadLine();
 

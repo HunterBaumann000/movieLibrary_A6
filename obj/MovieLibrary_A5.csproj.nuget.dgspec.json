@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Owner\\Desktop\\MovieLibrary_A5\\MovieLibrary_A5.csproj": {}
+    "c:\\Users\\Owner\\Desktop\\MovieLibrary_A5\\MovieLibrary_A5.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Owner\\Desktop\\MovieLibrary_A5\\MovieLibrary_A5.csproj": {
+    "c:\\Users\\Owner\\Desktop\\MovieLibrary_A5\\MovieLibrary_A5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Owner\\Desktop\\MovieLibrary_A5\\MovieLibrary_A5.csproj",
+        "projectUniqueName": "c:\\Users\\Owner\\Desktop\\MovieLibrary_A5\\MovieLibrary_A5.csproj",
         "projectName": "MovieLibrary_A5",
-        "projectPath": "C:\\Users\\Owner\\Desktop\\MovieLibrary_A5\\MovieLibrary_A5.csproj",
+        "projectPath": "c:\\Users\\Owner\\Desktop\\MovieLibrary_A5\\MovieLibrary_A5.csproj",
         "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Owner\\Desktop\\MovieLibrary_A5\\obj\\",
+        "outputPath": "c:\\Users\\Owner\\Desktop\\MovieLibrary_A5\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config"

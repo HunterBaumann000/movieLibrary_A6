@@ -37,7 +37,7 @@ namespace MovieLibrary_A5
 
                 sw.Close();
                 
-                // add movie details to Lists
+                // add show details to Lists
                 Shows.Add(show);
             } 
             catch(Exception e)
@@ -58,7 +58,7 @@ namespace MovieLibrary_A5
 
                 while (!sr.EndOfStream)
                 {
-                    // instance of Movie
+                    // instance of Show
                     Show show = new Show();
                     string line = sr.ReadLine();
 

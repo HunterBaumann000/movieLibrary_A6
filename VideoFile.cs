@@ -37,7 +37,7 @@ namespace MovieLibrary_A5
                 sw.WriteLine($"Id: {video.videoId}, Title: {video.videoTitle}, Format: {video.videoFormat}, Length: {video.videoLength} minutes, VideoRegions: {string.Join(", ", video.videoRegions)}");
                 sw.Close();
                 
-                // add movie details to Lists
+                // add video details to Lists
                 Videos.Add(video);
             } 
             catch(Exception e)
