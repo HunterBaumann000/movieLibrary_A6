@@ -23,7 +23,7 @@ namespace MovieLibrary_A5
                     
                 //creates file for user if they want it
                 if (wantNewFile.Equals("y")) {
-                    filePath = "videos.csv";
+                    filePath = "shows.csv";
                     StreamWriter sw = new StreamWriter(filePath);
                 }
             }
