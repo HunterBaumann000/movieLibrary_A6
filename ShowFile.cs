@@ -29,9 +29,9 @@ namespace MovieLibrary_A5
             }
             try
             {
-                // first generate movie id
+                // first generate show id
                 show.showId = Shows.Max(s => s.showId) + 1;
-                StreamWriter sw = new StreamWriter(filePath, true);
+                StreamWriter sw = new StreamWriter(filePath);
 
                 sw.WriteLine($"ID: {show.showId}, Title: {show.showTitle}, Season{show.showSeason} Ep. {show.showEpisode}, Writers: {string.Join(", ", show.showWriters)}");
 
@@ -50,7 +50,7 @@ namespace MovieLibrary_A5
             filePath = showFilePath;
             Shows = new List<Show>();
 
-            // read movie line
+            // read show line
             try
             {
                 StreamReader sr = new StreamReader(filePath);
@@ -69,7 +69,7 @@ namespace MovieLibrary_A5
                     show.showEpisode = int.Parse(showLine[3]);
                     show.showWriters = showLine[4].Split('|').ToList();
                     
-                    Shows.Add(show);
+                    Console.WriteLine(showLine);
                 }
                 // close file
                 sr.Close();

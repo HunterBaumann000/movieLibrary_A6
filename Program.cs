@@ -54,7 +54,7 @@ namespace MovieLibrary_A5
                             do
                             {
                                 // ask user to enter genre
-                                Console.WriteLine("Enter genre. ('.' to stop) ");
+                                Console.WriteLine("Enter a genre. ('.' to stop) ");
                                 tempInput = Console.ReadLine();
                                 //adds to genrelist
                                 movie.movieGenres.Add(tempInput);
@@ -66,10 +66,10 @@ namespace MovieLibrary_A5
                     } 
                     else if (userInput == "2") 
                     {
-                        // Add movie
+                        // Add show
                         Show show = new Show();
 
-                        // ask user to input movie title
+                        // ask user to input show title
                         Console.WriteLine("What is the show titled");
                         show.showTitle = Console.ReadLine();
 
@@ -84,7 +84,7 @@ namespace MovieLibrary_A5
             
                             do
                             {
-                                // ask user to enter genre
+                                // ask user to enter a writer
                                 Console.WriteLine("Enter a Writer. ('.' to stop) ");
                                 tempInput = Console.ReadLine();
 
@@ -101,7 +101,7 @@ namespace MovieLibrary_A5
                         // Add video
                         Video video = new Video();
 
-                        // ask user to input movie title
+                        // ask user to input video title
                         Console.WriteLine("What is the video titled");
                         video.videoTitle = Console.ReadLine();
 
@@ -116,8 +116,8 @@ namespace MovieLibrary_A5
                        
                             do
                             {
-                                // ask user to enter genre
-                                Console.WriteLine("Enter a Region, type '.' to stop) ");
+                                // ask user to enter region
+                                Console.WriteLine("Enter a Region (type '.' to stop) ");
                                 tempInput = Console.ReadLine();
 
                                 video.videoRegions.Add(tempInput);

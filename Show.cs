@@ -20,7 +20,7 @@ namespace MovieLibrary_A5
 
         public string displayShowFormatted()
         {
-            //fo
+            
             return $"ID: {showId}, Title: {showTitle}, Season {showSeason} Ep. {showEpisode}, Writers: {string.Join(", ", showWriters)}";
         }
     }

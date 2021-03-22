@@ -73,7 +73,7 @@ namespace MovieLibrary_A5
                     movie.movieGenres = movieLine[2].Split('|').ToList();
                     
                     //adds movie to file
-                    Movies.Add(movie);
+                    Console.WriteLine(movieLine);
                 }
                 // close file when done
                 sr.Close();

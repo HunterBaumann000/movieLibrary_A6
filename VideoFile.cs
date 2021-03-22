@@ -51,7 +51,7 @@ namespace MovieLibrary_A5
             filePath = videoFilePath;
             Videos = new List<Video>();
 
-            // read movie line
+            // read video line
             try
             {
                 //creates streamreader
@@ -72,7 +72,7 @@ namespace MovieLibrary_A5
                     video.videoLength = int.Parse(videoLine[3]);
                     video.videoRegions = videoLine[4].Split('|').ToList();
                     
-                    Videos.Add(video);
+                    Console.WriteLine(videoLine);
                 }
                 // close file when done
                 sr.Close();
