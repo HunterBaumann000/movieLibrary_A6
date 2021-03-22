@@ -25,12 +25,12 @@ namespace MovieLibrary_A5
                 //creates file for user if they want it
                 if (wantNewFile.Equals("y")) {
                     filePath = "videos.csv";
-                    StreamWriter sw = new StreamWriter(filePath);
+                    StreamWriter sw = new StreamWriter(filePath, true);
                 }
             }
             try
             {
-                // video id with lambda      V
+                // video id with lambda
                 video.videoId = Videos.Max(v => v.videoId) + 1;
                 StreamWriter sw = new StreamWriter(filePath, true);
                 

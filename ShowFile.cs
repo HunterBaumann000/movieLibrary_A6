@@ -24,14 +24,14 @@ namespace MovieLibrary_A5
                 //creates file for user if they want it
                 if (wantNewFile.Equals("y")) {
                     filePath = "shows.csv";
-                    StreamWriter sw = new StreamWriter(filePath);
+                    StreamWriter sw = new StreamWriter(filePath, true);
                 }
             }
             try
             {
                 // first generate show id
                 show.showId = Shows.Max(s => s.showId) + 1;
-                StreamWriter sw = new StreamWriter(filePath);
+                StreamWriter sw = new StreamWriter(filePath, true);
 
                 sw.WriteLine($"ID: {show.showId}, Title: {show.showTitle}, Season{show.showSeason} Ep. {show.showEpisode}, Writers: {string.Join(", ", show.showWriters)}");
 

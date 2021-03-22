@@ -26,7 +26,7 @@ namespace MovieLibrary_A5
                 //creates file for user if they want it
                 if (wantNewFile.Equals("y")) {
                     filePath = "movies.csv";
-                    StreamWriter sw = new StreamWriter(filePath);
+                    StreamWriter sw = new StreamWriter(filePath, true);
                 }
             }
             
