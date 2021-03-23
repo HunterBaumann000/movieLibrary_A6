@@ -29,7 +29,7 @@ namespace MovieLibrary_A5
             }
             try
             {
-                // first generate show id
+                // iterate through each show obj until theres no more greater, then add one
                 show.showId = Shows.Max(s => s.showId) + 1;
                 StreamWriter sw = new StreamWriter(filePath, true);
 
@@ -82,6 +82,7 @@ namespace MovieLibrary_A5
 
         public bool hasSameTitle(string showTitle)
         {
+            //convert all show objects to lowercase, and if that instance contains the title, return true
             if (Shows.ConvertAll(s => s.showTitle.ToLower()).Contains(showTitle.ToLower()))
             {
                 Console.WriteLine("{Title} is a duplicate in the file", showTitle);

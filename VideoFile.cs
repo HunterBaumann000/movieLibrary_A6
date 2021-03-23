@@ -30,7 +30,7 @@ namespace MovieLibrary_A5
             }
             try
             {
-                // video id with lambda
+                // iterate through each video obj until theres no more greater, then add one to ID
                 video.videoId = Videos.Max(v => v.videoId) + 1;
                 StreamWriter sw = new StreamWriter(filePath, true);
                 
@@ -85,6 +85,7 @@ namespace MovieLibrary_A5
         
         public bool hasSameTitle(string videoTitle)
         {
+            //convert all video objects to lowercase, and if that instance contains the title, return true
             if (Videos.ConvertAll(v => v.videoTitle.ToLower()).Contains(videoTitle.ToLower()))
             {
                 Console.WriteLine("{Title} is a duplicate in the file", videoTitle);

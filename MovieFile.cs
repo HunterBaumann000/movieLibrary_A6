@@ -31,7 +31,7 @@ namespace MovieLibrary_A5
             }
             
             try {
-                // first generate movie id
+                // iterate through each movie obj until theres no more greater, then add one
                 movie.movieId = Movies.Max(m => m.movieId) + 1;
                 StreamWriter sw = new StreamWriter(filePath, true);
                 sw.WriteLine($"{movie.movieId},{movie.movieTitle},{string.Join("|", movie.movieGenres)}");
@@ -86,7 +86,7 @@ namespace MovieLibrary_A5
         }
         public bool hasSameTitle(string movieTitle)
         {
-            //goes through each movie with a lambda and checks whether titles are the same
+            //convert all movie objects to lowercase, and if that instance contains the title, return true
             if (Movies.ConvertAll(m => m.movieTitle.ToLower()).Contains(movieTitle.ToLower())){
                 Console.WriteLine("{Title} is a duplicate in the file", movieTitle);
                 return true;
